@@ -323,4 +323,20 @@ footer{background:#060504;padding:5rem 0 2.5rem;border-top:1px solid var(--borde
   .numbers-inner{grid-template-columns:1fr 1fr}
   .about-stats{grid-template-columns:1fr 1fr}
   .contact-actions{flex-direction:column}
+
+  /* Mejora de visualización de la carta en móviles */
+  .menu-layout{grid-template-columns:1fr;gap:1.2rem}
+  .menu-tab-list{gap:.5rem;padding:0 .25rem; -webkit-overflow-scrolling:touch}
+  .m-tab{padding:.6rem .8rem;font-size:.78rem;flex:0 0 auto;white-space:nowrap}
+  .m-tab.active{border-bottom-color:var(--red)}
+  .m-content{padding-top:.6rem}
+
+  /* Evitar que nombres y descripciones se corten: apilar en pantallas pequeñas */
+  .m-item{flex-direction:column;align-items:flex-start;padding:.9rem 0;border-bottom:1px solid rgba(17,17,17,.065)}
+  .m-item-l{width:100%}
+  .m-item-price{margin-left:0;margin-top:.5rem}
+  .m-item-l .m-item-name,.m-item-l .m-item-desc{white-space:normal;overflow-wrap:break-word}
+  .m-item-l .m-item-desc{color:rgba(17,17,17,.55)}
+
+  .menu-img-accent{margin-top:1.8rem}
 }
